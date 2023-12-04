@@ -11,8 +11,8 @@ pipeline {
         stage('Build and push image') {
             steps {
                 withDockerRegistry(credentialsId: 'hanh2002', url: ' https://index.docker.io/v1/') {
-                    sh 'docker build -t hanh2002/nodejs-test:v10 .'
-                    sh 'docker push hanh2002/nodejs-test:v10'
+                    sh 'docker build -t hanh2002/nodejs-test:v11 .'
+                    sh 'docker push hanh2002/nodejs-test:v11'
                 }
             }
         }
